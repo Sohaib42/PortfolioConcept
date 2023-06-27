@@ -1,0 +1,92 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navigation-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navigation>a{
+    padding: 0 1rem;
+}
+.navigation>a>img{
+    height: 2rem;
+    padding: 0.5rem;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.navigation>a>img.react{
+    height: 1.5rem;
+    padding: 0.5rem;
+}
+/* Add stroke effect to the navigation links */
+.navigation>a>img.react:hover{
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.navigation-content>a{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.25s linear;
+}
+
+.navigation-content>a:hover{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    stroke: #61dafb;
+}
+.navigation>a>img.react:hover{
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.navigation>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.navigation>div>button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #646cff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+.navigation>div>button:hover{
+    background-color: #3e8e41;
+}
+.navigation>div>button:active{
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
+.navigation>div>button:focus{
+    outline: none;
+}
+.navigation>div>button>img{
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+.navigation>div>button>span{
+    font-weight: bold;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}

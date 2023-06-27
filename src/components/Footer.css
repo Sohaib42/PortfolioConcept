@@ -1,0 +1,26 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6e6d6d;
+    color: #fff;
+    text-align: center;
+  }
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+    padding: 1rem;
+}
+.social-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    width: 20%;
+}
+.social-footer>a{
+    padding: 0 1rem;
+}
